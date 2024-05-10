@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>sydDom project</title>
+		<script src="https://telegram.org/js/telegram-web-app.js"></script>
+		<script src="https://kit.fontawesome.com/ae60a47ee9.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+		<div id="root" ></div>
+		<script>
+			let spin,generateRandomCredentials,initiateMomentum,exit,stat,rule,roundFunc,shadowSpinAdd,shadowSpinRemove,sendUpdateStat,updateInput,text,headerData,destroy,sec_bg,spinBot
+
+			data_check_string = window.Telegram.WebApp.themeParams;
+			sec_bg = data_check_string.secondary_bg_color === undefined ? 'lightgrey' : data_check_string.secondary_bg_color
+			headerData = data_check_string.header_bg_color === undefined ? '#fff' : data_check_string.header_bg_color
+			text = data_check_string.text_color === undefined ? 'unset' : data_check_string.text_color
+			destroy = data_check_string.destructive_text_color === undefined ? 'red' : data_check_string.destructive_text_color
+
+			//alert(destroy)
+
+			window.Telegram.WebApp.expand()
+
+			window.Telegram.WebApp.sendData('hello from mini app')
+
+			data_check_string.text_color
+		</script>
+		<script type="module" src="component.js"></script>
+	</body>
+</html>
